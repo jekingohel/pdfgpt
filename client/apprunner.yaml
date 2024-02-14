@@ -1,5 +1,5 @@
 version: 1.0
-runtime: nodejs 18
+runtime: nodejs
 build:
   commands:
     build:
@@ -7,5 +7,6 @@ build:
       - yarn build
 run:
   command: yarn run dev
+  runtime-version: 18.0
   network:
     port: 3000
