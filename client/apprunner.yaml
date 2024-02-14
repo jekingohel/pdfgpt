@@ -1,0 +1,11 @@
+version: 1.0
+runtime: nodejs
+build:
+  commands:
+    build:
+      - yarn --production
+      - yarn build
+run:
+  command: yarn start
+  network:
+    port: 3000
