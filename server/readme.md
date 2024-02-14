@@ -4,7 +4,7 @@
 
    ```
    pip install virtualenv
-   virtualenv venv
+   virtualenv --python=python3.11 venv
    ```
 
 2. To activate virtualenv
@@ -33,5 +33,5 @@
 
 6. Run the `main.py` file using the Streamlit CLI. Execute the following command:
    ```
-   streamlit run app.py
+   python app.py
    ```

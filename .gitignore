@@ -1,0 +1,5 @@
+/__pycache__
+.DS_Store
+/server/.DS_Store
+/server/app/__pycache__
+/server/app/main/__pycache__
