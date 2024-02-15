@@ -3,11 +3,15 @@ runtime: python3
 build:
   commands:
     pre-build:
+      - echo Pre Build Started...
       - pip install virtualenv
       - virtualenv venv
       - source venv/bin/activate
+      - echo Pre Build Finshed...
     build:
+      - echo Installing Dependecies...
       - pip install -r requirements.txt
+      - echo Finished Installation...
 run:
   command: gunicorn app:app
   network:
