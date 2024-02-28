@@ -16,3 +16,6 @@ run:
   command: gunicorn app:app
   network:
     port: 8000
+  env:
+    - name: OPENAI_API_KEY
+      value: "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"
