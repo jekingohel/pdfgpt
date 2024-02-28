@@ -49,7 +49,8 @@ def get_conversation(file_id):
     if conversation:
         chat_histories = json.loads(conversation.messages)
 
-    file_url = f"{request.url_root}uploads/{file_details.filename}"
+    url = request.url_root.replace('http://', 'https://', 1)
+    file_url = f"{url}uploads/{file_details.filename}"
     print(f"Constructed File URL: {file_url}")  # Add this line for debugging
 
     return jsonify({
